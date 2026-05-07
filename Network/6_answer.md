@@ -70,23 +70,19 @@ Router# copy running-config startup-config
 
 * Используется для **отмены настройки или возврата к значению по умолчанию**.
 * Примеры:
-
-    ```text
+```text
 Router(config)# no shutdown   # активировать интерфейс (если он был выключен)
-    Router(config)# no ip route 192.168.1.0 255.255.255.0 10.0.0.1
-    Router(config)# no vlan 10
-    ```
+Router(config)# no ip route 192.168.1.0 255.255.255.0 10.0.0.1
+Router(config)# no vlan 10
+```
+**Краткий ответ для Anki:**
 
-    ---
+* **Консольный кабель** — прямое управление устройством.
+* **Режимы IOS:**
 
-    **Краткий ответ для Anki:**
+* User EXEC (`>`), Privileged EXEC (`#`), Global Config (`(config)#`), Interface Config (`(config-if)#`).
+* **Running-config** — текущая конфигурация; **startup-config** — сохранённая.
+* **Tab** → автодополнение.
+* **`no`** → отмена команды / возврат к умолчанию.
 
-    * **Консольный кабель** — прямое управление устройством.
-    * **Режимы IOS:**
-
-    * User EXEC (`>`), Privileged EXEC (`#`), Global Config (`(config)#`), Interface Config (`(config-if)#`).
-    * **Running-config** — текущая конфигурация; **startup-config** — сохранённая.
-    * **Tab** → автодополнение.
-    * **`no`** → отмена команды / возврат к умолчанию.
-
-    ---
+---
